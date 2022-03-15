@@ -7,12 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController, UNUserNotificationCenterDelegate {
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var button: UIButton!
     
     private var notification: Notification = Notification()
     
     @IBAction func buttonAction(_ sender: Any) {
         notification.createNotification()
+        button.isEnabled = false
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +28,16 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         view.backgroundColor = ColorGenerator().getColor()
     }
     
+}
+
+extension ViewController: UNUserNotificationCenterDelegate {
+    
     func userNotificationCenter(
         _ center: UNUserNotificationCenter,
         willPresent notification: UNNotification,
         withCompletionHandler completionHandler: (UNNotificationPresentationOptions) -> Void
     ) {
+        button.isEnabled = true
         completionHandler(.banner)
     }
     
@@ -39,19 +47,16 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async {
-        //print(response.actionIdentifier)
         switch response.actionIdentifier {
         case "change":
-            print("Trocar")
             changeColor()
+            button.isEnabled = true
             break
         default:
-            print("Manter")
+            button.isEnabled = true
             break
             
         }
     }
-    
-    
 }
 

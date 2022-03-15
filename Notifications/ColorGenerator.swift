@@ -33,7 +33,6 @@ class ColorGenerator{
     
     func getColor() -> UIColor {
         let color = colors[Int.random(in: 0..<colors.count)]
-        print(color)
         return color
     }
 }

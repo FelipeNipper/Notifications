@@ -64,11 +64,11 @@
 				5588444827E0F88A004670A3 /* SceneDelegate.swift */,
 				5588444A27E0F88A004670A3 /* ViewController.swift */,
 				5588445A27E0FCBA004670A3 /* Notification.swift */,
+				5588445C27E10CA0004670A3 /* ColorGenerator.swift */,
 				5588444C27E0F88A004670A3 /* Main.storyboard */,
 				5588444F27E0F88C004670A3 /* Assets.xcassets */,
 				5588445127E0F88C004670A3 /* LaunchScreen.storyboard */,
 				5588445427E0F88C004670A3 /* Info.plist */,
-				5588445C27E10CA0004670A3 /* ColorGenerator.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";

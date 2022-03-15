@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVT-8T-HYg">
-                                <rect key="frame" x="133" y="426" width="148.5" height="44"/>
+                                <rect key="frame" x="121" y="426" width="172.5" height="44"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Notification">
+                                <buttonConfiguration key="configuration" style="plain" title="Change Color">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
-                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rPG-RV-y1p"/>
@@ -38,6 +38,9 @@
                             <constraint firstItem="EVT-8T-HYg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cAJ-Zu-JFI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="EVT-8T-HYg" id="cdB-HD-b36"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
