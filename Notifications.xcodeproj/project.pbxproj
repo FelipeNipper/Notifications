@@ -13,6 +13,8 @@
 		5588444E27E0F88A004670A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5588444C27E0F88A004670A3 /* Main.storyboard */; };
 		5588445027E0F88C004670A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5588444F27E0F88C004670A3 /* Assets.xcassets */; };
 		5588445327E0F88C004670A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5588445127E0F88C004670A3 /* LaunchScreen.storyboard */; };
+		5588445B27E0FCBA004670A3 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5588445A27E0FCBA004670A3 /* Notification.swift */; };
+		5588445D27E10CA0004670A3 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5588445C27E10CA0004670A3 /* ColorGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5588444F27E0F88C004670A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5588445227E0F88C004670A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5588445427E0F88C004670A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5588445A27E0FCBA004670A3 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		5588445C27E10CA0004670A3 /* ColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				5588444627E0F88A004670A3 /* AppDelegate.swift */,
 				5588444827E0F88A004670A3 /* SceneDelegate.swift */,
 				5588444A27E0F88A004670A3 /* ViewController.swift */,
+				5588445A27E0FCBA004670A3 /* Notification.swift */,
 				5588444C27E0F88A004670A3 /* Main.storyboard */,
 				5588444F27E0F88C004670A3 /* Assets.xcassets */,
 				5588445127E0F88C004670A3 /* LaunchScreen.storyboard */,
 				5588445427E0F88C004670A3 /* Info.plist */,
+				5588445C27E10CA0004670A3 /* ColorGenerator.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5588445B27E0FCBA004670A3 /* Notification.swift in Sources */,
 				5588444B27E0F88A004670A3 /* ViewController.swift in Sources */,
+				5588445D27E10CA0004670A3 /* ColorGenerator.swift in Sources */,
 				5588444727E0F88A004670A3 /* AppDelegate.swift in Sources */,
 				5588444927E0F88A004670A3 /* SceneDelegate.swift in Sources */,
 			);
