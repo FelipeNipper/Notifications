@@ -39,6 +39,8 @@ class Notification {
         
         let request = UNNotificationRequest(identifier: uuidString, content: context, trigger: trigger)
         
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "Posted"), object: nil)
+        
         userNotificationCenter.add(request) { error in
             if error != nil {
                 print(error)
